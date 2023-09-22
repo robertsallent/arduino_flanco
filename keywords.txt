@@ -1,0 +1,21 @@
+#######################################
+# Classes, datatypes (KEYWORD1)
+#######################################
+
+Flanco	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+detectar	KEYWORD2
+subida	KEYWORD2
+bajada	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+BAJADA  LITERAL1
+SUBIDA  LITERAL1
+NO  LITERAL1
