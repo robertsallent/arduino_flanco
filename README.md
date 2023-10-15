@@ -11,7 +11,7 @@ Primero, crearemos un objeto Flanco para cada elemento que queramos analizar.
 Por ejemplo, si tenemos un pulsador queremos vigilar a lo largo
 de todo el programa, haremos una variable global así:
 
-Flanco flanco();
+Flanco flanco;
 
 
 INICIALIZACIÓN

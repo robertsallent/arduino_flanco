@@ -11,12 +11,12 @@
  *  que luego podremos usar en cualquier parte del sketch.
  */
 
-#include "Flanco.h"
+#include <Flanco.h>
 
 const int BOTON = 12;
 const int LED   = 2;
 
-// Primero creamos un objeto de tipo flanco.
+// PRIMERO creamos un objeto de tipo flanco.
 Flanco flanco; 
 
 
@@ -27,14 +27,14 @@ void setup() {
 
   pinMode(BOTON, INPUT_PULLUP);
 
-  // Después vinculamos el objeto al pin con el que queremos trabajar.
+  // SEGUNDO vinculamos el objeto al pin con el que queremos trabajar.
   flanco.inicializar(BOTON);
 }
 
 void loop() {
   static bool encendido = false; // variable que controla el led
 
-  // Ahora ya podemos detectar flancos usando el método detectar().
+  // Ahora ya podemos DETECTAR FLANCOS usando el método detectar().
   // Obtendremos uno de los siguientes valores: Flanco::BAJADA, Flanco::NO o Flanco::SUBIDA  
   // que tienen los valores -1, 0 y 1 respectivamente.
   int deteccion = flanco.detectar();
@@ -47,7 +47,7 @@ void loop() {
 
   /*
   * Para detectar flanco de subida haríamos:
-  * if(deteccion == Flanco::BAJADA)  
+  * if(deteccion == Flanco::SUBIDA)  
   *   
   * Y si queremos detectar un flanco, da igual de subida que de bajada:
   * if(deteccion)
